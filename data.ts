@@ -10,27 +10,27 @@ export type Page = {
 
 export const pages: Page[] = [
   {
-    label: 'Home',
+    label: 'home',
     href: '/',
   },
   {
-    label: 'About',
-    href: '/about',
+    label: 'aboutUs',
+    href: '/about-us',
   },
   {
-    label: 'Services',
+    label: 'services',
     href: '/services',
   },
   {
-    label: 'Tariffs',
+    label: 'tariffs',
     href: '/tariffs',
   },
   {
-    label: 'Price Check',
+    label: 'priceCheck',
     href: '/price-check',
   },
   {
-    label: 'Contact',
+    label: 'contact',
     href: '/contact',
   },
 ];

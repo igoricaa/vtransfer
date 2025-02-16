@@ -19,6 +19,7 @@ export default async function Home({
         fill
         sizes='100vw'
         quality={100}
+        priority
         className='object-cover -z-10'
       />
       <div className='flex flex-col gap-y-12 relative'>

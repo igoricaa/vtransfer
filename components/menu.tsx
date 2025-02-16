@@ -1,12 +1,13 @@
 'use client';
 
-import Link from 'next/link';
 import Burger from './burger';
 import { useState } from 'react';
 import Logo from './logo';
 import { Page, pages, phone1, phone2 } from '@/data';
+import { Link, Pathnames } from '@/i18n/routing';
+import NavLink from './nav-link';
 
-const Menu = () => {
+const Menu = ({ translations }: { translations: Record<string, string> }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -31,13 +32,14 @@ const Menu = () => {
         </div>
         <div className='flex flex-col gap-y-4 mt-20 [@media(min-height:1015px)]:mt-32 opacity-list'>
           {pages.map((page: Page, index) => (
-            <Link
+            <NavLink
               key={index}
-              href={page.href}
+              href={page.href as Pathnames}
               className='text-white text-4xl font-bold uppercase transition-opacity duration-300 w-fit'
+              onClick={() => setIsOpen(false)}
             >
-              {page.label}
-            </Link>
+              {translations[page.label]}
+            </NavLink>
           ))}
         </div>
         <div className='mt-auto'>

@@ -17,8 +17,8 @@ export const routing = defineRouting({
       sr: '/usluge',
       ru: '/услуги',
     },
-    '/contact-us': {
-      en: '/contact-us',
+    '/contact': {
+      en: '/contact',
       sr: '/kontakt',
       ru: '/контакт',
     },
@@ -32,11 +32,11 @@ export const routing = defineRouting({
       sr: '/proveri-cenu',
       ru: '/проверить-цену',
     },
-    '/[...rest]': {
-      en: '/[...rest]',
-      sr: '/[...rest]',
-      ru: '/[...rest]',
-    },
+    // '/[...rest]': {
+    //   en: '/[...rest]',
+    //   sr: '/[...rest]',
+    //   ru: '/[...rest]',
+    // },
   },
 });
 

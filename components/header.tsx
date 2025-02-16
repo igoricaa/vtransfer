@@ -1,10 +1,21 @@
 import { email, phone1, phone2 } from '@/data';
 import Logo from './logo';
-import Link from 'next/link';
 import Menu from './menu';
 import LocaleSwitcher from './locale/locale-switcher';
+import { Link } from '@/i18n/routing';
+import { getTranslations } from 'next-intl/server';
 
-const Header = () => {
+const Header = async () => {
+  const t = await getTranslations('nav');
+
+  const routeTranslations = {
+    home: t('home'),
+    aboutUs: t('aboutUs'),
+    services: t('services'),
+    tariffs: t('tariffs'),
+    priceCheck: t('priceCheck'),
+    contact: t('contact'),
+  };
   return (
     <header className='absolute z-10 top-0 left-0 w-full flex items-center justify-between px-side pt-12'>
       <div className='flex items-center gap-x-20'>
@@ -34,7 +45,7 @@ const Header = () => {
         </div>
       </div>
       <div className='flex flex-col items-end gap-y-2'>
-        <Menu />
+        <Menu translations={routeTranslations} />
         <LocaleSwitcher />
       </div>
     </header>

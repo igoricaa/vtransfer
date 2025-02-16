@@ -3,8 +3,24 @@
     "label": "Select language",
     "locale": "{locale, select, en {ENG} sr {SRB} ru {RUS} other {Unknown}}"
   },
+  "nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "services": "Services",
+    "tariffs": "Tariffs",
+    "priceCheck": "Check price",
+    "contact": "Contact"
+  },
   "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+    "title": "Discover"
+  },
+  "AboutUs": {
+    "title": "About us",
+    "description": "Welcome to V Transfer, your trusted partner for premium transportation in Belgrade and beyond. Specializing in luxury passenger transport with V-Class vehicles, we are committed to delivering professional, comfortable, and secure services that adhere to the highest standards. Our fleet is available around the clock, 365 days a year. Experience transportation at its finest, where unparalleled comfort, safety, and exceptional quality come together seamlessly.",
+    "viewVehicle": "View our vehicle"
+  },
+  "notFoundPage": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist. It might have been moved or deleted."
   }
 }
