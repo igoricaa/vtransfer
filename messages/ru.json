@@ -1,0 +1,10 @@
+{
+  "LocaleSwitcher": {
+    "label": "Select language",
+    "locale": "{locale, select, en {ENG} sr {SRB} ru {RUS} other {Unknown}}"
+  },
+  "HomePage": {
+    "title": "nego world!",
+    "about": "Go to the about page"
+  }
+}

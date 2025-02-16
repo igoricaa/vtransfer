@@ -2,6 +2,7 @@ import { email, phone1, phone2 } from '@/data';
 import Logo from './logo';
 import Link from 'next/link';
 import Menu from './menu';
+import LocaleSwitcher from './locale/locale-switcher';
 
 const Header = () => {
   return (
@@ -32,9 +33,9 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className='flex flex-col items-center gap-y-2'>
+      <div className='flex flex-col items-end gap-y-2'>
         <Menu />
-        <div>ENG</div>
+        <LocaleSwitcher />
       </div>
     </header>
   );

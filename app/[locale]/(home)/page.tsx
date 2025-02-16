@@ -1,6 +1,16 @@
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
 
-export default function Home() {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  const t = await getTranslations('HomePage');
+
   return (
     <main className='w-screen h-screen px-side relative flex flex-col justify-center'>
       <Image
@@ -12,7 +22,9 @@ export default function Home() {
         className='object-cover -z-10'
       />
       <div className='flex flex-col gap-y-12 relative'>
-        <h1 className='text-white text-6xl font-medium uppercase'>Discover</h1>
+        <h1 className='text-white text-6xl font-medium uppercase'>
+          {t('title')}
+        </h1>
         <div className='relative w-[50vw] aspect-[1177/111]'>
           <Image src='/v-transfer-text.svg' alt='hero' fill sizes='800px' />
         </div>
