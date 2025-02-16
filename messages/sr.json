@@ -19,6 +19,9 @@
     "description": "Dobrodošli u V Transfer, vašu pouzdanu kompaniju za prevoz u Beogradu i van Srbije. Specijalizovani smo za luksuzni prevoz putnika u V-klasi vozilima. Naša misija je da pružimo profesionalnu, udobnu i bezbednu uslugu prevoza koja ispunjava najviše standarde. Naša vozila su dostupna 24/7, tokom cele godine. Iskusite prevoz na premium nivou, koji spaja udobnost, sigurnost i vrhunski kvalitet.",
     "viewVehicle": "Pogledajte naše vozilo"
   },
+  "Contact": {
+    "title": "Kontaktirajte nas"
+  },
   "notFoundPage": {
     "title": "Strana nije pronađena",
     "description": "Strana koju tražite ne postoji."

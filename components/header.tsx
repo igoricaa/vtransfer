@@ -1,12 +1,15 @@
+'use client';
+
 import { email, phone1, phone2 } from '@/data';
 import Logo from './logo';
 import Menu from './menu';
 import LocaleSwitcher from './locale/locale-switcher';
-import { Link } from '@/i18n/routing';
-import { getTranslations } from 'next-intl/server';
+import { Link, usePathname } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 
-const Header = async () => {
-  const t = await getTranslations('nav');
+const Header = () => {
+  const t = useTranslations('nav');
+  const pathname = usePathname();
 
   const routeTranslations = {
     home: t('home'),
@@ -17,7 +20,11 @@ const Header = async () => {
     contact: t('contact'),
   };
   return (
-    <header className='absolute z-10 top-0 left-0 w-full flex items-center justify-between px-side pt-12'>
+    <header
+      className={`absolute z-10 top-0 left-0 w-full flex items-center justify-between px-side py-12 ${
+        pathname === '/contact' && `bg-black`
+      }`}
+    >
       <div className='flex items-center gap-x-20'>
         <Link href='/'>
           <Logo className='w-28 h-28' />
