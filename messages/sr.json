@@ -6,8 +6,7 @@
   "nav": {
     "home": "Početna",
     "aboutUs": "O nama",
-    "services": "Usluge",
-    "tariffs": "Tarife",
+    "servicesAndTariffs": "Usluge i tarife",
     "priceCheck": "Proveri cenu",
     "contact": "Kontakt"
   },
@@ -25,5 +24,35 @@
   "notFoundPage": {
     "title": "Strana nije pronađena",
     "description": "Strana koju tražite ne postoji."
+  },
+  "ServicesAndTariffs": {
+    "services": {
+      "title": "Usluge",
+      "service-one": "Prevoz putnika do/od aerodroma;",
+      "service-two": "Iznajmljivanje vozila sa vozačem;",
+      "service-three": "Poslovna putovanja unutar i van zemlje;",
+      "service-four": "Usluge ličnog vozača;",
+      "service-five": "Iznajmljivanje vozila za posebne prilike (momačke/devojačke večeri, venčanja, mature, proslave);"
+    },
+
+    "tariffs": {
+      "title": "Tarife",
+      "vehicle": {
+        "seats": "sedišta: 6+1",
+        "year": "Godište: 2024"
+      },
+      "tariff-one": {
+        "title": "Pun dan sa vozačem 300€",
+        "includes": "Uključuje: do 150 km;",
+        "additional-info": "(Svaki dodatni km se naplaćuje 1€ po km);",
+        "explanation": "1 pun dan = 10 sati."
+      },
+      "tariff-two": {
+        "title": "Pola dana sa vozačem 200€",
+        "includes": "Uključuje: do 100 km;",
+        "additional-info": "(Svaki dodatni km se naplaćuje 1€ po km);",
+        "explanation": "Pola dana = 5 sati."
+      }
+    }
   }
 }

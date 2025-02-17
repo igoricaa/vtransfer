@@ -12,20 +12,15 @@ export const routing = defineRouting({
       sr: '/o-nama',
       ru: '/o-nas',
     },
-    '/services': {
-      en: '/services',
-      sr: '/usluge',
-      ru: '/услуги',
+    '/services-and-tariffs': {
+      en: '/services-and-tariffs',
+      sr: '/usluge-i-tarife',
+      ru: '/услуги-и-тарифы',
     },
     '/contact': {
       en: '/contact',
       sr: '/kontakt',
       ru: '/контакт',
-    },
-    '/tariffs': {
-      en: '/tariffs',
-      sr: '/tarife',
-      ru: '/тарифы',
     },
     '/price-check': {
       en: '/price-check',

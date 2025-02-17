@@ -14,8 +14,7 @@ const Header = () => {
   const routeTranslations = {
     home: t('home'),
     aboutUs: t('aboutUs'),
-    services: t('services'),
-    tariffs: t('tariffs'),
+    servicesAndTariffs: t('servicesAndTariffs'),
     priceCheck: t('priceCheck'),
     contact: t('contact'),
   };
