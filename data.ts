@@ -1,3 +1,7 @@
+import AirportTransfersIcon from '@/components/icons/airport-transfers-icon';
+import LocalTransfersIcon from '@/components/icons/local-transfers-icon';
+import LongDistanceTransfersIcon from '@/components/icons/long-distance-transfers-icon';
+
 export const email: string = 'info@vclass.serbia.com';
 export const phone1: string = '+381 65 2731990';
 export const phone2: string = '+381 64 2332000';
@@ -45,3 +49,22 @@ export const tariffsImages: string[] = [
   '/tariffs/v-transfer-tariffs-4.jpg',
   '/tariffs/v-transfer-tariffs-5.jpg',
 ];
+
+export type Service = {
+  slug: string;
+  title?: string;
+  icon?: React.FC<React.SVGProps<SVGElement>>;
+  link?: string;
+};
+
+export const serviceIcons = {
+  'airport-transfers': AirportTransfersIcon,
+  'local-transfers': LocalTransfersIcon,
+  'long-distance-transfers': LongDistanceTransfersIcon,
+};
+
+export type RouteDetails = {
+  distance: string;
+  duration: string;
+  price: number;
+};

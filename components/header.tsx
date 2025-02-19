@@ -4,8 +4,9 @@ import { email, phone1, phone2 } from '@/data';
 import Logo from './logo';
 import Menu from './menu';
 import LocaleSwitcher from './locale/locale-switcher';
-import { Link, usePathname } from '@/i18n/routing';
+import { usePathname } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
+import CustomLink from './custom-link';
 
 const Header = () => {
   const t = useTranslations('nav');
@@ -25,9 +26,9 @@ const Header = () => {
       }`}
     >
       <div className='flex items-center gap-x-20'>
-        <Link href='/'>
+        <CustomLink href='/'>
           <Logo className='w-28 h-28' />
-        </Link>
+        </CustomLink>
         <div className='flex items-center gap-x-4 opacity-list'>
           <a
             href={`mailto:${email}`}

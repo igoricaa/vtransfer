@@ -1,5 +1,5 @@
 {
-  "LocaleSwitcher": {
+  "localeSwitcher": {
     "label": "Select language",
     "locale": "{locale, select, en {ENG} sr {SRB} ru {RUS} other {Unknown}}"
   },
@@ -10,22 +10,22 @@
     "priceCheck": "Proveri cenu",
     "contact": "Kontakt"
   },
-  "HomePage": {
+  "homePage": {
     "title": "Discover"
   },
-  "AboutUs": {
+  "aboutUs": {
     "title": "O nama",
     "description": "Dobrodošli u V Transfer, vašu pouzdanu kompaniju za prevoz u Beogradu i van Srbije. Specijalizovani smo za luksuzni prevoz putnika u V-klasi vozilima. Naša misija je da pružimo profesionalnu, udobnu i bezbednu uslugu prevoza koja ispunjava najviše standarde. Naša vozila su dostupna 24/7, tokom cele godine. Iskusite prevoz na premium nivou, koji spaja udobnost, sigurnost i vrhunski kvalitet.",
     "viewVehicle": "Pogledajte naše vozilo"
   },
-  "Contact": {
+  "contact": {
     "title": "Kontaktirajte nas"
   },
   "notFoundPage": {
     "title": "Strana nije pronađena",
     "description": "Strana koju tražite ne postoji."
   },
-  "ServicesAndTariffs": {
+  "servicesAndTariffs": {
     "services": {
       "title": "Usluge",
       "service-one": "Prevoz putnika do/od aerodroma;",
@@ -54,5 +54,42 @@
         "explanation": "Pola dana = 5 sati."
       }
     }
+  },
+  "priceCheck": {
+    "title": "Proveri cenu za:",
+    "transfers": "Prevoz",
+    "reserve": "Rezerviši odmah",
+    "airport-transfers": {
+      "serviceTitle": "Aerodrom transferi",
+      "title": {
+        "main": "Aerodrom transferi",
+        "sub": "Kalkulatore cene"
+      },
+      "description": {
+        "main": "Od aerodroma Nikola Tesla do bilo gde u Beogradu ili obrnuto.",
+        "sub": "Fiksna cena: 60€"
+      }
+    },
+    "local-transfers": {
+      "serviceTitle": "Lokalni transferi",
+      "title": {
+        "main": "Lokalni transferi",
+        "sub": "Kalkulatore cene"
+      }
+    },
+    "long-distance-transfers": {
+      "serviceTitle": "Duga putovanja",
+      "title": {
+        "main": "Duga putovanja",
+        "sub": "Kalkulatore cene"
+      },
+      "routeDetails": "Detalji putovanja",
+      "distance": "Distanca",
+      "duration": "Trajanje",
+      "price": "Cena"
+    },
+    "departureLocation": "Mesto polaska",
+    "destinationLocation": "Mesto dolaska",
+    "calculate": "Proveri cenu"
   }
 }

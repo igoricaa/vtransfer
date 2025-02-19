@@ -1,8 +1,10 @@
 import { email } from '@/data';
 import { phone1 } from '@/data';
 import { phone2 } from '@/data';
+import { routing } from '@/i18n/routing';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
+import { notFound } from 'next/navigation';
 
 export default async function Contact({
   params,
@@ -10,8 +12,11 @@ export default async function Contact({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
   setRequestLocale(locale);
-  const t = await getTranslations('Contact');
+  const t = await getTranslations('contact');
 
   return (
     <main className='flex flex-col justify-center items-end h-screen px-side relative pt-[10vh]'>
@@ -24,7 +29,7 @@ export default async function Contact({
         className='object-cover -z-10'
       />
       <div>
-        <h1 className='text-white text-7xl font-semibold uppercase'>
+        <h1 className='text-white text-7xl font-bold uppercase'>
           {t('title')}
         </h1>
         <div className='flex flex-col items-end gap-y-1 opacity-list mt-10'>

@@ -1,5 +1,5 @@
 {
-  "LocaleSwitcher": {
+  "localeSwitcher": {
     "label": "Select language",
     "locale": "{locale, select, en {ENG} sr {SRB} ru {RUS} other {Unknown}}"
   },
@@ -10,10 +10,10 @@
     "priceCheck": "Check price",
     "contact": "Contact"
   },
-  "HomePage": {
+  "homePage": {
     "title": "Discover"
   },
-  "AboutUs": {
+  "aboutUs": {
     "title": "About us",
     "description": "Welcome to V Transfer, your trusted partner for premium transportation in Belgrade and beyond. Specializing in luxury passenger transport with V-Class vehicles, we are committed to delivering professional, comfortable, and secure services that adhere to the highest standards. Our fleet is available around the clock, 365 days a year. Experience transportation at its finest, where unparalleled comfort, safety, and exceptional quality come together seamlessly.",
     "viewVehicle": "View our vehicle"
@@ -22,10 +22,10 @@
     "title": "Page not found",
     "description": "The page you are looking for does not exist. It might have been moved or deleted."
   },
-  "Contact": {
+  "contact": {
     "title": "Contact us"
   },
-  "ServicesAndTariffs": {
+  "servicesAndTariffs": {
     "services": {
       "title": "Services",
       "service-one": "Passenger transfers to/from the airport;",
@@ -53,5 +53,41 @@
         "explanation": "Half day = 5 hours."
       }
     }
+  },
+  "priceCheck": {
+    "title": "Check price for:",
+    "reserve": "Reserve now",
+    "airport-transfers": {
+      "serviceTitle": "Airport Transfers",
+      "title": {
+        "main": "Airport Transfers",
+        "sub": "Price Calculator"
+      },
+      "description": {
+        "main": "From Nikola Tesla Airport to anywhere in Belgrade or the other way around.",
+        "sub": "Fixed price: 60€"
+      }
+    },
+    "local-transfers": {
+      "serviceTitle": "Local Transfers",
+      "title": {
+        "main": "Local Transfers",
+        "sub": "Price Calculator"
+      }
+    },
+    "long-distance-transfers": {
+      "serviceTitle": "Long Distance Transfers",
+      "title": {
+        "main": "Long Distance Transfers",
+        "sub": "Price Calculator"
+      },
+      "routeDetails": "Route Details",
+      "distance": "Distance",
+      "duration": "Duration",
+      "price": "Price"
+    },
+    "departureLocation": "Departure Location",
+    "destinationLocation": "Destination Location",
+    "calculate": "Calculate price"
   }
 }

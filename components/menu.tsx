@@ -4,8 +4,9 @@ import Burger from './burger';
 import { useState } from 'react';
 import Logo from './logo';
 import { Page, pages, phone1, phone2 } from '@/data';
-import { Link, Pathnames } from '@/i18n/routing';
+import { Pathnames } from '@/i18n/routing';
 import NavLink from './nav-link';
+import CustomLink from './custom-link';
 
 const Menu = ({ translations }: { translations: Record<string, string> }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,9 +27,9 @@ const Menu = ({ translations }: { translations: Record<string, string> }) => {
         } transition-all duration-300`}
       >
         <div className='flex items-center justify-between'>
-          <Link href='/'>
+          <CustomLink href='/'>
             <Logo className='w-28 h-28' />
-          </Link>
+          </CustomLink>
         </div>
         <div className='flex flex-col gap-y-4 mt-20 [@media(min-height:1015px)]:mt-32 opacity-list'>
           {pages.map((page: Page, index) => (

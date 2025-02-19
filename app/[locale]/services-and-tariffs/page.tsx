@@ -1,15 +1,27 @@
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Slider from '@/components/slider';
 import { servicesImages, tariffsImages } from '@/data';
+import { routing } from '@/i18n/routing';
+import { notFound } from 'next/navigation';
 
-export default async function ServicesAndTariffs() {
-  const t = await getTranslations('ServicesAndTariffs');
+export default async function ServicesAndTariffs({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
+  setRequestLocale(locale);
+
+  const t = await getTranslations('servicesAndTariffs');
 
   return (
     <main>
       <section className='h-screen flex gap-x-4'>
         <div className='min-w-2xl w-2xl h-full flex flex-col justify-center px-side pt-30 2xl:pt-0'>
-          <h1 className='text-white text-5xl font-semibold uppercase relative w-fit before:content-[""] before:absolute before:-top-12 before:left-0 before:w-full before:h-5 before:bg-orange-500'>
+          <h1 className='text-white text-5xl font-bold uppercase relative w-fit before:content-[""] before:absolute before:-top-12 before:left-0 before:w-full before:h-5 before:bg-orange-500'>
             {t('services.title')}
           </h1>
           <ul className='pl-6'>
@@ -61,10 +73,10 @@ export default async function ServicesAndTariffs() {
               {t('tariffs.title')}
             </h1>
             <div>
-              <p className='text-white text-3xl font-semibold mt-4'>
+              <p className='text-white text-3xl font-bold mt-4'>
                 {t('tariffs.tariff-one.title')}
               </p>
-              <p className='text-white text-2xl font-semibold mt-1'>
+              <p className='text-white text-2xl font-bold mt-1'>
                 {t('tariffs.tariff-one.includes')}
               </p>
               <p className='text-white text-2xl font-medium'>
@@ -75,10 +87,10 @@ export default async function ServicesAndTariffs() {
               </p>
             </div>
             <div className='mt-5'>
-              <p className='text-white text-3xl font-semibold mt-4'>
+              <p className='text-white text-3xl font-bold mt-4'>
                 {t('tariffs.tariff-two.title')}
               </p>
-              <p className='text-white text-2xl font-semibold mt-1'>
+              <p className='text-white text-2xl font-bold mt-1'>
                 {t('tariffs.tariff-two.includes')}
               </p>
               <p className='text-white text-2xl font-medium'>

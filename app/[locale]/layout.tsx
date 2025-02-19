@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import localFont from 'next/font/local';
 import '../globals.css';
 import Header from '@/components/header';
 import { getMessages, setRequestLocale } from 'next-intl/server';
@@ -8,14 +8,26 @@ import { routing } from '@/i18n/routing';
 import { NextIntlClientProvider } from 'next-intl';
 import { ReactNode } from 'react';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+const inputSans = localFont({
+  src: [
+    {
+      path: '../../fonts/InputSans-Light.ttf',
+      weight: '300',
+    },
+    {
+      path: '../../fonts/InputSans-Regular.ttf',
+      weight: '400',
+    },
+    {
+      path: '../../fonts/InputSans-Medium.ttf',
+      weight: '500',
+    },
+    {
+      path: '../../fonts/InputSans-Bold.ttf',
+      weight: '700',
+    },
+  ],
+  variable: '--font-inputsans',
 });
 
 export const metadata: Metadata = {
@@ -65,9 +77,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inputSans.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <Header />
           {children}

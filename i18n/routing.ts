@@ -17,6 +17,21 @@ export const routing = defineRouting({
       sr: '/usluge-i-tarife',
       ru: '/услуги-и-тарифы',
     },
+    '/price-check/local-transfers': {
+      en: '/price-check/local-transfers',
+      sr: '/proveri-cenu/lokalni-prevozi',
+      ru: '/проверить-цену/местные-перевозки',
+    },
+    '/price-check/airport-transfers': {
+      en: '/price-check/airport-transfers',
+      sr: '/proveri-cenu/aerodromski-prevozi',
+      ru: '/проверить-цену/аэропортские-перевозки',
+    },
+    '/price-check/long-distance-transfers': {
+      en: '/price-check/long-distance-transfers',
+      sr: '/proveri-cenu/dugi-prevozi',
+      ru: '/проверить-цену/дальние-перевозки',
+    },
     '/contact': {
       en: '/contact',
       sr: '/kontakt',
@@ -27,11 +42,11 @@ export const routing = defineRouting({
       sr: '/proveri-cenu',
       ru: '/проверить-цену',
     },
-    // '/[...rest]': {
-    //   en: '/[...rest]',
-    //   sr: '/[...rest]',
-    //   ru: '/[...rest]',
-    // },
+    '/[...rest]': {
+      en: '/[...rest]',
+      sr: '/[...rest]',
+      ru: '/[...rest]',
+    },
   },
 });
 

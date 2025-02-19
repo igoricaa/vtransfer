@@ -4,6 +4,9 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --padding-side: 5rem;
+
+  --breakpoint-3xl: 110rem;
+  --breakpoint-4xl: 120rem;
 }
 
 /*
@@ -32,7 +35,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inputsans);
 }
 
 .opacity-list:has(> *:hover) > *:not(:hover) {
