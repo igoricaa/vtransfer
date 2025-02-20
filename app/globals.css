@@ -25,11 +25,23 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+
+  :root {
+    --background: #000;
+    --foreground: #fff;
+  }
 }
 
-:root {
-  --background: #000;
-  --foreground: #fff;
+@media (max-width: 1024px) {
+  :root {
+    --padding-side: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --padding-side: 1rem;
+  }
 }
 
 body {

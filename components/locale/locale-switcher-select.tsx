@@ -43,12 +43,10 @@ export default function LocaleSwitcherSelect({
 
   return (
     <label
-      className={`${
-        isPending && 'transition-opacity [&:disabled]:opacity-30'
-      }`}
+      className={`${isPending && 'transition-opacity [&:disabled]:opacity-30'}`}
     >
       <p className='sr-only'>{label}</p>
-      <div className='flex items-center gap-x-2 opacity-list'>
+      <div className='flex items-center gap-x-4 lg:gap-x-2 opacity-list'>
         {React.Children.map(children, (child, index) => {
           if (React.isValidElement(child) && (child.props as any).value) {
             const isSelected = defaultValue === (child.props as any).value;
@@ -70,7 +68,7 @@ export default function LocaleSwitcherSelect({
                 />
                 <label
                   htmlFor={(child.props as any).value}
-                  className={`cursor-pointer font-medium ${
+                  className={`cursor-pointer font-medium text-sm sm:text-base ${
                     isSelected && 'border-b border-white pb-0.5'
                   }`}
                 >

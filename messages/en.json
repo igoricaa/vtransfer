@@ -66,14 +66,18 @@
       "description": {
         "main": "From Nikola Tesla Airport to anywhere in Belgrade or the other way around.",
         "sub": "Fixed price: 60€"
-      }
+      },
+      "back": "Back",
+      "reserve": "Reserve now"
     },
     "local-transfers": {
       "serviceTitle": "Local Transfers",
       "title": {
         "main": "Local Transfers",
         "sub": "Price Calculator"
-      }
+      },
+      "back": "Back",
+      "reserve": "Reserve now"
     },
     "long-distance-transfers": {
       "serviceTitle": "Long Distance Transfers",
@@ -84,7 +88,9 @@
       "routeDetails": "Route Details",
       "distance": "Distance",
       "duration": "Duration",
-      "price": "Price"
+      "price": "Price",
+      "back": "Back",
+      "reserve": "Reserve now"
     },
     "departureLocation": "Departure Location",
     "destinationLocation": "Destination Location",

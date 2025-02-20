@@ -22,21 +22,21 @@ const Menu = ({ translations }: { translations: Record<string, string> }) => {
         onClick={() => setIsOpen(false)}
       ></div>
       <div
-        className={`fixed z-20 top-0 right-0 w-2xl h-screen bg-black px-16 pt-14 pb-10 flex flex-col justify-between ${
+        className={`fixed z-20 top-0 right-0 w-screen sm:w-xl lg:w-2xl h-svh bg-black px-6 sm:px-10 lg:px-16 pt-6 sm:pt-8 lg:pt-14 pb-8 lg:pb-10 flex flex-col justify-between ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         } transition-all duration-300`}
       >
         <div className='flex items-center justify-between'>
           <CustomLink href='/'>
-            <Logo className='w-28 h-28' />
+            <Logo className='w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28' />
           </CustomLink>
         </div>
-        <div className='flex flex-col gap-y-4 mt-20 [@media(min-height:1015px)]:mt-32 opacity-list'>
+        <div className='flex flex-col gap-y-2 sm:gap-y-4 lg:gap-y-4 mt-20 [@media(min-height:1015px)]:mt-32 opacity-list'>
           {pages.map((page: Page, index) => (
             <NavLink
               key={index}
               href={page.href as Pathnames}
-              className='text-white text-4xl font-bold uppercase transition-opacity duration-300 w-fit'
+              className='text-white text-xl sm:text-2xl lg:text-4xl font-bold uppercase transition-opacity duration-300 w-fit'
               onClick={() => setIsOpen(false)}
             >
               {translations[page.label]}
@@ -44,7 +44,7 @@ const Menu = ({ translations }: { translations: Record<string, string> }) => {
           ))}
         </div>
         <div className='mt-auto'>
-          <p className='text-white text-2xl font-bold uppercase mb-6 border-b-1 w-fit'>
+          <p className='text-white text-lg sm:text-xl lg:text-2xl font-bold uppercase mb-3 sm:mb-4 lg:mb-6 border-b-1 w-fit'>
             Contact us:
           </p>
           <div className='flex flex-col gap-y-2 opacity-list'>
@@ -75,7 +75,7 @@ const ContactLink = ({
   return (
     <a
       href={href}
-      className='text-white text-lg font-bold uppercase w-fit transition-opacity duration-300'
+      className='text-white text-sm sm:text-base lg:text-lg font-bold uppercase w-fit transition-opacity duration-300'
     >
       {children}
     </a>

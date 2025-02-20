@@ -1,16 +1,13 @@
-'use client';
-
 import { email, phone1, phone2 } from '@/data';
 import Logo from './logo';
 import Menu from './menu';
 import LocaleSwitcher from './locale/locale-switcher';
-import { usePathname } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import CustomLink from './custom-link';
+import HeaderClientWrapper from './header-client-wrapper';
 
 const Header = () => {
   const t = useTranslations('nav');
-  const pathname = usePathname();
 
   const routeTranslations = {
     home: t('home'),
@@ -20,16 +17,12 @@ const Header = () => {
     contact: t('contact'),
   };
   return (
-    <header
-      className={`absolute z-10 top-0 left-0 w-full flex items-center justify-between px-side py-12 ${
-        pathname === '/contact' && `bg-black`
-      }`}
-    >
+    <HeaderClientWrapper>
       <div className='flex items-center gap-x-20'>
         <CustomLink href='/'>
-          <Logo className='w-28 h-28' />
+          <Logo className='w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28' />
         </CustomLink>
-        <div className='flex items-center gap-x-4 opacity-list'>
+        <div className='hidden lg:flex items-center gap-x-4 opacity-list'>
           <a
             href={`mailto:${email}`}
             className='text-white text-xl transition-opacity duration-300'
@@ -51,11 +44,11 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className='flex items-center gap-x-6'>
+      <div className='flex items-center gap-x-8'>
         <LocaleSwitcher />
         <Menu translations={routeTranslations} />
       </div>
-    </header>
+    </HeaderClientWrapper>
   );
 };
 

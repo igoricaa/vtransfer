@@ -1,7 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
+import Image, { getImageProps } from 'next/image';
+import ImageResponsive from '@/components/image-responsive';
 
 export default async function Home({
   params,
@@ -16,27 +17,52 @@ export default async function Home({
 
   const t = await getTranslations('homePage');
 
+  const common = {
+    alt: 'V Transfer Belgrade',
+    sizes: '100vw',
+    fill: true,
+    priority: true,
+    quality: 100,
+  };
+  const {
+    props: { srcSet: desktop },
+  } = getImageProps({
+    ...common,
+    src: '/v-transfer-home.jpg',
+  });
+  const {
+    props: { srcSet: mobile, ...rest },
+  } = getImageProps({
+    ...common,
+    src: '/v-transfer-home-mobile.jpg',
+  });
+
   return (
     <main className='w-screen h-screen px-side relative flex flex-col justify-center'>
-      <Image
+      <ImageResponsive
         src='/v-transfer-home.jpg'
-        alt='hero'
-        fill
+        srcMobile='/v-transfer-home-mobile.jpg'
+        alt='V Transfer Belgrade'
         sizes='100vw'
-        quality={100}
+        fill
         priority
-        className='object-cover -z-10'
+        quality={100}
+        pictureClassName='absolute inset-0 w-screen h-full -z-10'
       />
-      <div className='flex flex-col gap-y-12 relative'>
-        <h1 className='text-white text-6xl uppercase'>{t('title')}</h1>
-        <div className='relative w-[50vw] aspect-[1177/111]'>
+      <div className='flex flex-col gap-y-4 sm:gap-y-6 lg:gap-y-12 relative'>
+        <h1 className='text-white text-4xl sm:text-5xl lg:text-6xl uppercase'>
+          {t('title')}
+        </h1>
+        <div className='relative lg:w-[50vw] aspect-[1177/111]'>
           <Image src='/v-transfer-text.svg' alt='hero' fill sizes='800px' />
         </div>
         <div className='absolute -bottom-[25vh]'>
-          <p className='text-white text-4xl font-medium'>
+          <p className='text-white text-2xl sm:text-3xl lg:text-4xl font-medium'>
             Where comfort meets class.
           </p>
-          <p className='text-white/60 text-4xl mt-4'>Belgrade, Serbia.</p>
+          <p className='text-white/60 text-2xl sm:text-3xl lg:text-4xl mt-1 sm:mt-2 lg:mt-4'>
+            Belgrade, Serbia.
+          </p>
         </div>
       </div>
     </main>

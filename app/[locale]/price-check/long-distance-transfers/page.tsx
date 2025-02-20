@@ -27,7 +27,7 @@ const ServicePriceCheck = async ({
       <PriceCalculator
         titleMain={t('title.main')}
         titleSub={t('title.sub')}
-        className='mt-52'
+        className='mt-32 sm:mt-44 lg:mt-32 3xl:mt-52 4xl:mt-64'
       />
     </main>
   );

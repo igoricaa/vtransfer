@@ -64,7 +64,7 @@ export default function Slider({
           {images.map((image, index) => (
             <div
               key={`${image}-${index}`}
-              className={`keen-slider__slide number-slide${index + 1} relative`}
+              className={`keen-slider__slide number-slide${index + 1} relative aspect-[1920/1280] lg:aspect-auto`}
             >
               <Image
                 src={image}
@@ -113,8 +113,8 @@ function Arrow(props: {
   return (
     <svg
       onClick={props.onClick}
-      className={`w-18 h-18 absolute top-1/2 -translate-y-1/2 cursor-pointer bg-white/50 rounded-full p-1  ${
-        props.left ? 'left-8' : 'left-auto right-8'
+      className={`w-12 h-12 sm:w-14 sm:h-14 lg:w-18 lg:h-18 absolute top-1/2 -translate-y-1/2 cursor-pointer bg-white/50 rounded-full p-1  ${
+        props.left ? 'left-4 sm:left-6 lg:left-8' : 'left-auto right-4 sm:right-6 lg:right-8'
       } ${disabled}`}
       xmlns='http://www.w3.org/2000/svg'
       width='24'

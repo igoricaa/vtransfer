@@ -68,14 +68,18 @@
       "description": {
         "main": "Od aerodroma Nikola Tesla do bilo gde u Beogradu ili obrnuto.",
         "sub": "Fiksna cena: 60€"
-      }
+      },
+      "back": "Nazad",
+      "reserve": "Rezerviši odmah"
     },
     "local-transfers": {
       "serviceTitle": "Lokalni transferi",
       "title": {
         "main": "Lokalni transferi",
         "sub": "Kalkulatore cene"
-      }
+      },
+      "back": "Nazad",
+      "reserve": "Rezerviši odmah"
     },
     "long-distance-transfers": {
       "serviceTitle": "Duga putovanja",
@@ -86,7 +90,9 @@
       "routeDetails": "Detalji putovanja",
       "distance": "Distanca",
       "duration": "Trajanje",
-      "price": "Cena"
+      "price": "Cena",
+      "back": "Nazad",
+      "reserve": "Rezerviši odmah"
     },
     "departureLocation": "Mesto polaska",
     "destinationLocation": "Mesto dolaska",
