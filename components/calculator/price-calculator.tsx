@@ -191,34 +191,35 @@ const RouteCalculator: React.FC = () => {
         <div className='mb-4 p-3 bg-red-100 text-red-700 rounded'>{error}</div>
       )}
 
-      {routeDetails && (
-        <div
-          ref={routeDetailsRef}
-          className='mt-10 bg-white/10 px-6 pt-5 pb-6 rounded-md flex items-center justify-between gap-x-10'
-        >
-          <div>
-            <h3 className='text-2xl font-bold mb-2'>
-              {t('long-distance-transfers.routeDetails')}:
-            </h3>
-            <p className='text-lg'>
-              {t('long-distance-transfers.distance')} ~ {routeDetails.distance}
-            </p>
-            <p className='text-lg'>
-              {t('long-distance-transfers.duration')} ~ {routeDetails.duration}
-            </p>
-            <p className='text-lg'>
-              {t('long-distance-transfers.price')} ~ {routeDetails.price}€
-            </p>
-          </div>
+      <div ref={routeDetailsRef}>
+        {routeDetails && (
+          <div className='mt-20 bg-white/10 px-6 pt-5 pb-6 rounded-md flex items-center justify-between gap-x-10'>
+            <div>
+              <h3 className='text-2xl font-bold mb-2'>
+                {t('long-distance-transfers.routeDetails')}:
+              </h3>
+              <p className='text-lg'>
+                {t('long-distance-transfers.distance')} ~{' '}
+                {routeDetails.distance}
+              </p>
+              <p className='text-lg'>
+                {t('long-distance-transfers.duration')} ~{' '}
+                {routeDetails.duration}
+              </p>
+              <p className='text-xl font-medium'>
+                {t('long-distance-transfers.price')} ~ {routeDetails.price}€
+              </p>
+            </div>
 
-          <Link
-            href='/contact'
-            className='bg-white uppercase text-black font-medium text-lg border-1 border-white rounded-md px-5 py-4 w-fit hover:bg-transparent hover:text-white transition-all duration-300 cursor-pointer'
-          >
-            {t('reserve')}
-          </Link>
-        </div>
-      )}
+            <Link
+              href='/contact'
+              className='bg-white uppercase text-black font-medium text-lg border-1 border-white rounded-md px-5 py-4 w-fit hover:bg-transparent hover:text-white transition-all duration-300 cursor-pointer'
+            >
+              {t('reserve')}
+            </Link>
+          </div>
+        )}
+      </div>
 
       <div className='h-96 border rounded overflow-hidden mt-20'>
         <Map

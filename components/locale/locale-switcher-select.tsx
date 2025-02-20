@@ -43,7 +43,7 @@ export default function LocaleSwitcherSelect({
 
   return (
     <label
-      className={`mt-6 ${
+      className={`${
         isPending && 'transition-opacity [&:disabled]:opacity-30'
       }`}
     >

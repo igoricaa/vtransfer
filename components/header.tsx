@@ -51,9 +51,9 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <div className='flex flex-col items-end gap-y-2'>
-        <Menu translations={routeTranslations} />
+      <div className='flex items-center gap-x-6'>
         <LocaleSwitcher />
+        <Menu translations={routeTranslations} />
       </div>
     </header>
   );
