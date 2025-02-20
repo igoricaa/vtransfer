@@ -15,8 +15,7 @@
   },
   "aboutUs": {
     "title": "O nama",
-    "description": "Dobrodošli u V Transfer, vašu pouzdanu kompaniju za prevoz u Beogradu i van Srbije. Specijalizovani smo za luksuzni prevoz putnika u V-klasi vozilima. Naša misija je da pružimo profesionalnu, udobnu i bezbednu uslugu prevoza koja ispunjava najviše standarde. Naša vozila su dostupna 24/7, tokom cele godine. Iskusite prevoz na premium nivou, koji spaja udobnost, sigurnost i vrhunski kvalitet.",
-    "viewVehicle": "Pogledajte naše vozilo"
+    "description": "Dobrodošli u V Transfer, vašu pouzdanu kompaniju za prevoz u Beogradu i van Srbije. Specijalizovani smo za luksuzni prevoz putnika u V-klasi vozilima. Naša misija je da pružimo profesionalnu, udobnu i bezbednu uslugu prevoza koja ispunjava najviše standarde. Naša vozila su dostupna 24/7, tokom cele godine. Iskusite prevoz na premium nivou, koji spaja udobnost, sigurnost i vrhunski kvalitet."
   },
   "contact": {
     "title": "Kontaktirajte nas"
@@ -42,16 +41,16 @@
         "year": "Godište: 2024"
       },
       "tariff-one": {
-        "title": "Pun dan sa vozačem 300€",
+        "title": "Pun dan sa vozačem 350€",
         "includes": "Uključuje: do 150 km;",
         "additional-info": "(Svaki dodatni km se naplaćuje 1€ po km);",
-        "explanation": "1 pun dan = 10 sati."
+        "explanation": "1 pun dan = 8 sati."
       },
       "tariff-two": {
         "title": "Pola dana sa vozačem 200€",
         "includes": "Uključuje: do 100 km;",
         "additional-info": "(Svaki dodatni km se naplaćuje 1€ po km);",
-        "explanation": "Pola dana = 5 sati."
+        "explanation": "Pola dana = 4 sata."
       }
     }
   },

@@ -1,4 +1,3 @@
-import CustomLink from '@/components/custom-link';
 import ImageResponsive from '@/components/image-responsive';
 import { routing } from '@/i18n/routing';
 import { getTranslations } from 'next-intl/server';
@@ -18,7 +17,7 @@ export default async function AboutUs({
   const t = await getTranslations('aboutUs');
 
   return (
-    <main className='flex flex-col justify-center h-screen px-side relative pt-[10vh]'>
+    <main className='min-h-screen px-side relative pt-30 sm:pt-44 lg:pt-56 pb-16 sm:pb-20'>
       <ImageResponsive
         src='/v-transfer-about-us.jpg'
         srcMobile='/v-transfer-about-us-mobile-2.jpg'
@@ -33,15 +32,7 @@ export default async function AboutUs({
         <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold uppercase'>
           {t('title')}
         </h1>
-        <p className='lg:text-xl mt-6 sm:mt-8 lg:mt-9'>
-          {t('description')}
-        </p>
-        <CustomLink
-          href='/'
-          className='block w-fit uppercase sm:bg-transparent font-medium text-base sm:text-lg lg:text-xl border-1 border-white rounded-md px-4 py-3 mt-6 sm:mt-8 lg:mt-10 hover:bg-white hover:text-black transition-all duration-300'
-        >
-          {t('viewVehicle')}
-        </CustomLink>
+        <p className='lg:text-xl mt-6 sm:mt-8 lg:mt-9'>{t('description')}</p>
       </div>
     </main>
   );

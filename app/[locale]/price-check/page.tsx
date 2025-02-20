@@ -27,7 +27,7 @@ export default async function PriceCheck({
   }));
 
   return (
-    <main className='h-screen relative flex flex-col justify-end pb-8 sm:pb-16 lg:pb-20'>
+    <main className='h-screen relative flex flex-col pt-32 justify-center lg:justify-end pb-8 sm:pb-16 lg:pb-20'>
       <ImageResponsive
         src='/v-transfer-price-check.jpg'
         srcMobile='/v-transfer-price-check-mobile.jpg'

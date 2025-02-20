@@ -15,8 +15,7 @@
   },
   "aboutUs": {
     "title": "About us",
-    "description": "Welcome to V Transfer, your trusted partner for premium transportation in Belgrade and beyond. Specializing in luxury passenger transport with V-Class vehicles, we are committed to delivering professional, comfortable, and secure services that adhere to the highest standards. Our fleet is available around the clock, 365 days a year. Experience transportation at its finest, where unparalleled comfort, safety, and exceptional quality come together seamlessly.",
-    "viewVehicle": "View our vehicle"
+    "description": "Welcome to V Transfer, your trusted partner for premium transportation in Belgrade and beyond. Specializing in luxury passenger transport with V-Class vehicles, we are committed to delivering professional, comfortable, and secure services that adhere to the highest standards. Our fleet is available around the clock, 365 days a year. Experience transportation at its finest, where unparalleled comfort, safety, and exceptional quality come together seamlessly."
   },
   "notFoundPage": {
     "title": "Page not found",
@@ -41,16 +40,16 @@
         "year": "Year: 2024"
       },
       "tariff-one": {
-        "title": "Full Day with driver 300€",
+        "title": "Full Day with driver 350€",
         "includes": "Includes: up to 150 km;",
         "additional-info": "(Every extra km is charged 1€ per km)",
-        "explanation": "1 full day = 10 hours."
+        "explanation": "1 full day = 8 hours."
       },
       "tariff-two": {
         "title": "Half Day with driver 200€",
         "includes": "Includes: up to 100 km;",
         "additional-info": "(Every extra km is charged 1€ per km)",
-        "explanation": "Half day = 5 hours."
+        "explanation": "Half day = 4 hours."
       }
     }
   },

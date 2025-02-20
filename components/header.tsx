@@ -22,23 +22,23 @@ const Header = () => {
         <CustomLink href='/'>
           <Logo className='w-16 h-16 sm:w-20 sm:h-20 lg:w-28 lg:h-28' />
         </CustomLink>
-        <div className='hidden lg:flex items-center gap-x-4 opacity-list'>
+        <div className='hidden lg:flex flex-wrap 2xl:flex-nowrap 2xl:items-center gap-y-2 2xl:gap-y-0 gap-x-4 opacity-list'>
           <a
             href={`mailto:${email}`}
-            className='text-white text-xl transition-opacity duration-300'
+            className='text-white text-xl basis-full 2xl:basis-auto transition-opacity duration-300 whitespace-nowrap'
           >
             {email}
           </a>
           <a
             href={`tel:${phone1}`}
-            className='text-white text-xl transition-opacity duration-300 ml-6'
+            className='text-white text-xl transition-opacity duration-300 2xl:ml-6 whitespace-nowrap'
           >
             {phone1}
           </a>
           <span className='text-white text-2xl'>/</span>
           <a
             href={`tel:${phone2}`}
-            className='text-white text-xl transition-opacity duration-300'
+            className='text-white text-xl transition-opacity duration-300 whitespace-nowrap'
           >
             {phone2}
           </a>

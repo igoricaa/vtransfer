@@ -49,18 +49,18 @@ export default async function Home({
         quality={100}
         pictureClassName='absolute inset-0 w-screen h-full -z-10'
       />
-      <div className='flex flex-col gap-y-4 sm:gap-y-6 lg:gap-y-12 relative'>
-        <h1 className='text-white text-4xl sm:text-5xl lg:text-6xl uppercase'>
+      <div className='flex flex-col gap-y-4 sm:gap-y-6 lg:gap-y-9 relative'>
+        <h1 className='text-white text-4xl sm:text-5xl lg:text-4xl font-medium uppercase'>
           {t('title')}
         </h1>
         <div className='relative lg:w-[50vw] aspect-[1177/111]'>
           <Image src='/v-transfer-text.svg' alt='hero' fill sizes='800px' />
         </div>
-        <div className='absolute -bottom-[25vh]'>
-          <p className='text-white text-2xl sm:text-3xl lg:text-4xl font-medium'>
+        <div className='absolute -bottom-[25vh] overflow-hidden'>
+          <p className='text-white text-lg sm:text-3xl lg:text-[1.5vw] font-medium whitespace-nowrap'>
             Where comfort meets class.
           </p>
-          <p className='text-white/60 text-2xl sm:text-3xl lg:text-4xl mt-1 sm:mt-2 lg:mt-4'>
+          <p className='text-white/60 text-lg sm:text-3xl lg:text-[1.5vw] mt-1 sm:mt-2 lg:mt-4'>
             Belgrade, Serbia.
           </p>
         </div>

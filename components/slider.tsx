@@ -64,7 +64,7 @@ export default function Slider({
           {images.map((image, index) => (
             <div
               key={`${image}-${index}`}
-              className={`keen-slider__slide number-slide${index + 1} relative aspect-[1920/1280] lg:aspect-auto`}
+              className={`keen-slider__slide number-slide${index + 1} relative aspect-[1920/1280] h-full lg:aspect-auto`}
             >
               <Image
                 src={image}
