@@ -11,7 +11,11 @@
     "contact": "Контакты"
   },
   "homePage": {
-    "title": "Discover"
+    "title": "ОТКРОЙ",
+    "subtitle": {
+      "main": "Там, где комфорт встречается с классом",
+      "sub": "Белград, Сербия."
+    }
   },
   "aboutUs": {
     "title": "O нас",

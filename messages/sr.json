@@ -11,7 +11,11 @@
     "contact": "Kontakt"
   },
   "homePage": {
-    "title": "Discover"
+    "title": "Otkrij",
+    "subtitle": {
+      "main": "Gde se komfor susreće sa klasom",
+      "sub": "Beograd, Srbija."
+    }
   },
   "aboutUs": {
     "title": "O nama",

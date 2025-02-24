@@ -58,10 +58,10 @@ export default async function Home({
         </div>
         <div className='absolute -bottom-[25vh] overflow-hidden'>
           <p className='text-white text-lg sm:text-3xl lg:text-[1.5vw] font-medium whitespace-nowrap'>
-            Where comfort meets class.
+            {t('subtitle.main')}
           </p>
           <p className='text-white/60 text-lg sm:text-3xl lg:text-[1.5vw] mt-1 sm:mt-2 lg:mt-4'>
-            Belgrade, Serbia.
+            {t('subtitle.sub')}
           </p>
         </div>
       </div>
