@@ -2,7 +2,7 @@ import AirportTransfersIcon from '@/components/icons/airport-transfers-icon';
 import LocalTransfersIcon from '@/components/icons/local-transfers-icon';
 import LongDistanceTransfersIcon from '@/components/icons/long-distance-transfers-icon';
 
-export const email: string = 'info@vclass.serbia.com';
+export const email: string = 'infovtransfer@gmail.com';
 export const phone1: string = '+381 65 2731990';
 export const phone2: string = '+381 64 2332000';
 export const instagram: string = 'vtransfer_bg';
