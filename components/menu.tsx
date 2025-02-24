@@ -3,7 +3,7 @@
 import Burger from './burger';
 import { useState } from 'react';
 import Logo from './logo';
-import { Page, pages, phone1, phone2 } from '@/data';
+import { email, Page, pages, phone1, phone2 } from '@/data';
 import { Pathnames } from '@/i18n/routing';
 import NavLink from './nav-link';
 import CustomLink from './custom-link';
@@ -48,6 +48,7 @@ const Menu = ({ translations }: { translations: Record<string, string> }) => {
             Contact us:
           </p>
           <div className='flex flex-col gap-y-2 opacity-list'>
+            <ContactLink href={`mailto:${email}`}>{email}</ContactLink>
             <ContactLink href={`tel:${phone1}`}>{phone1}</ContactLink>
             <ContactLink href={`tel:${phone2}`}>{phone2}</ContactLink>
             <ContactLink href='https://www.instagram.com/vtransfer.vn'>
