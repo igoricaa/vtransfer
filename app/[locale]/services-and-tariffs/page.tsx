@@ -18,10 +18,10 @@ export default async function ServicesAndTariffs({
   const t = await getTranslations('servicesAndTariffs');
 
   return (
-    <main className=''>
+    <main>
       <section className='lg:min-h-screen flex flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:gap-x-4'>
-        <div className='lg:min-w-2xl lg:w-2xl h-full flex flex-col justify-center px-side pt-44 sm:pt-52 lg:pt-64 2xl:pt-0 lg:pb-14 text-white'>
-          <h1 className='text-3xl sm:text-4xl lg:text-5xl font-bold uppercase relative w-fit before:content-[""] before:absolute before:-top-12 before:left-0 before:w-full before:h-5 before:bg-orange-500'>
+        <div className='lg:min-w-2xl lg:w-2xl h-full flex flex-col justify-center px-side pt-44 sm:pt-52 lg:pt-72 lg:pb-14 text-white'>
+          <h1 className='text-4xl sm:text-5xl lg:text-6xl font-bold uppercase relative w-fit before:content-[""] before:absolute before:-top-12 before:left-0 before:w-full before:h-5 before:bg-orange-500'>
             {t('services.title')}
           </h1>
           <ul className='pl-6'>
