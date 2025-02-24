@@ -57,7 +57,7 @@ export default async function Home({
           <Image src='/v-transfer-text.svg' alt='hero' fill sizes='800px' />
         </div>
         <div className='absolute -bottom-[25vh] overflow-hidden'>
-          <p className='text-white text-lg sm:text-3xl lg:text-[1.5vw] font-medium whitespace-nowrap'>
+          <p className='text-white text-lg sm:text-3xl lg:text-[1.5vw] font-medium'>
             {t('subtitle.main')}
           </p>
           <p className='text-white/60 text-lg sm:text-3xl lg:text-[1.5vw] mt-1 sm:mt-2 lg:mt-4'>
