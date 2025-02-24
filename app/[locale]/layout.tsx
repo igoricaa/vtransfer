@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://vtransfer.rs'),
 
   title: {
-    default: 'V Transfer',
+    default: 'V Transfer - Your trusted partner for premium transportation in Belgrade and beyond.',
     template: '%s | V Transfer',
   },
   description:
